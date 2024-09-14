@@ -5,23 +5,53 @@ permalink: /about/
 weight: 3
 ---
 
-# **About Me**
+<h1>About me</h1>
 
-Hi I am **{{ site.author.name }}** :wave:,<br>
-I’m a Senior Software Engineer specializing in backend development, cloud services, and AI solutions. With expertise in Python, JavaScript, Node.js, and frameworks like Django and React, I deliver scalable solutions across finance, technology, e-commerce, and multimedia sectors.
+<br/>
+<p>
+    Hi I am <strong>{{ site.author.name }}</strong> :wave:,
+</p>
 
-Currently working remotely with Simplified, TLDR Technologies Inc, I lead projects in AI-powered video automation and media processing, optimizing cloud infrastructure and enhancing database performance. Previously at Aubergine Solutions Pvt Ltd, I developed backend applications with GraphQL and Django and led e-commerce initiatives. My early career at Nividata Consultancy provided a strong foundation in fintech and blockchain technology.
+<p>I’m a Senior Software Engineer, aka the backend wizard 🧙‍♂️, who loves playing with cloud services and AI magic. My
+    toolkit? Python, JavaScript, Node.js, C/C++ and power-ups like DjangoJS and React! I build cool stuff that scales
+    across
+    finance, tech, e-commerce, and multimedia like a pro 🛠️💻.</p>
 
-I am an active contributor to StackOverflow and GitHub, recognized with several awards and badges, including a Rising Star Award and multiple HackerRank achievements. My background in Information Technology and certifications in Scrum Mastery reflect my dedication to continuous learning and innovation.
-<div class="row">
-{% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
-{% include about/skills.html title="Other Skills" source=site.data.other-skills %}
+<p>Right now, I’m working remotely (from my comfy chair 🪑) with Simplified, TLDR Technologies Inc., where I lead
+    AI-powered video automation and media projects 🎥🤖. I'm also the cloud whisperer ☁️, making sure everything runs fast
+    and smooth ⚡. Before that, I was rocking backend development at Aubergine Solutions and kicking off e-commerce
+    innovations 🚀. And in my early days at Nividata, I dived deep into the fintech and blockchain worlds 🔐💰.
+    Back when I was a programming newbie 🧑‍💻, I dabbled in IoT projects 🌐 and got hands-on with low-level C and C++
+    programming 🤓.
+</p>
+
+<p>I’m a regular on StackOverflow and GitHub, earning some shiny awards and badges 🏅. My tech journey is powered by a
+    degree in IT, a few Scrum Mastery certs, and an unquenchable thirst for learning and innovation!</p>
+
+
+<!--<p>-->
+<!--    I’m a Senior Software Engineer specializing in backend development, cloud services, and AI solutions. With expertise-->
+<!--    in Python, JavaScript, Node.js, and frameworks like Django and React, I deliver scalable solutions across finance,-->
+<!--    technology, e-commerce, and multimedia sectors.-->
+<!--</p>-->
+<!--<p>Currently working remotely with Simplified, TLDR Technologies Inc, I lead projects in AI-powered video automation and-->
+<!--    media processing, optimizing cloud infrastructure and enhancing database performance. Previously at Aubergine-->
+<!--    Solutions Pvt Ltd, I developed backend applications with GraphQL and Django and led e-commerce initiatives. My early-->
+<!--    career at Nividata Consultancy provided a strong foundation in fintech and blockchain technology.</p>-->
+<!--<p>I am an active contributor to StackOverflow and GitHub, recognized with several awards and badges, including a Rising-->
+<!--    Star Award and multiple HackerRank achievements. My background in Information Technology and certifications in Scrum-->
+<!--    Mastery reflect my dedication to continuous learning and innovation.</p>-->
+<!--<div class="row">-->
+<!--    {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}-->
+<!--    {% include about/skills.html title="Other Skills" source=site.data.other-skills %}-->
+<!--</div>-->
+
+<h3 class="mt-4">Here’s a little taste of my skill buffet!</h3>
+
+<div class="mt-3 row">
+    {% include skills.html %}
 </div>
 
 <div class="row">
-
-</div>
-
-<div class="row">
-{% include about/timeline.html %}
+    {% include about/timeline.html %}
 </div>

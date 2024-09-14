@@ -7,7 +7,7 @@ baseurl             : ""            # Change to empty quotes if you are hosting 
 repository          : devangpadhiyar.github.io      # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : yousinix/portfolYOU
 open_new_tab        : true                    # Opens external URLs in new tab (works for posts, projects and navbar only)
-
+resume_url          : /assets/resume.pdf
 
 ### Plugins ###
 plugins:
@@ -20,6 +20,8 @@ nav_exclude:                                            # The following paths ar
   - pages/404.html
   - pages/index.md
   - documentation/partials/**                           # For Documentation Only
+  - pages/blog.html
+  - pages/projects.html
 
 
 ### Author Info ###
@@ -39,7 +41,7 @@ author:
 # spotify           : your_username
   stackoverflow     : 7852189/devang-padhiyar
   phone             : +917567060070
-  resume            : assets/Devang_Padhiyar_Resume_3.pdf
+  resume            : assets/resume.pdf
 # tumblr            : your_username.tumblr.com
 # twitch            : your_username
 #  twitter           : your_username

@@ -1,0 +1,19 @@
+<div class="col">
+    {% for skill in site.data.skills %}
+    <div class="row mt-4 wow fadeInUp" data-wow-duration="0.4s">
+        <div class="col h5">{{ skill.name }}</div>
+    </div>
+    <div class="row">
+        {% for item in skill.items %}
+        <div class="col-2 d-flex flex-column align-items-stretch wow fadeInUp"
+             data-wow-duration="0.4s">
+            <img alt="{{ item.name }}" class="rounded w-100 flex-grow-1" src="{{ item.image | relative_url }}"
+                 style="object-fit: contain; height: 76px;">
+            <small class="text-center">
+                {{ item.name }}
+            </small>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>

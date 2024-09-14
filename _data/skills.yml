@@ -1,0 +1,70 @@
+- name: Languages
+  items:
+    - name: Python
+      image: assets/icons/python.svg
+    - name: Javascript
+      image: assets/icons/javascript.svg
+    - name: Typescript
+      image: assets/icons/typescript.svg
+    - name: NodeJS
+      image: assets/icons/node.svg
+    - name: C++
+      image: assets/icons/cpp.svg
+
+- name: Frameworks and Libraries
+  items:
+    - name: Django
+      image: assets/icons/django.svg
+    - name: Celery
+      image: assets/icons/celery.png
+    - name: ReactJS
+      image: assets/icons/reactjs.svg
+    - name: ExpressJS
+      image: assets/icons/expressjs.png
+    - name: GraphQL
+      image: assets/icons/graphql.svg
+
+- name: Databases and relevant tools
+  items:
+    - name: PostgreSQL
+      image: assets/icons/postgresql.svg
+    - name: MySQL
+      image: assets/icons/mysql.svg
+    - name: MongoDB
+      image: assets/icons/mongodb.svg
+    - name: SQL Server
+      image: assets/icons/sql_server.png
+    - name: Redis
+      image: assets/icons/redis.svg
+    - name: RabbitMQ
+      image: assets/icons/rabbitmq.svg
+
+- name: Cloud Services
+  items:
+    - name: AWS
+      image: assets/icons/aws.svg
+    - name: DigitalOcean
+      image: assets/icons/digitalocean.svg
+    - name: Google Cloud
+      image: assets/icons/gcp.svg
+    - name: Azure
+      image: assets/icons/azure.svg
+
+- name: Other Miscellaneous Tools
+  items:
+    - name: FFmpeg
+      image: assets/icons/ffmpeg.svg
+    - name: Pandas
+      image: assets/icons/pandas.svg
+    - name: Numpy
+      image: assets/icons/numpy.svg
+    - name: OpenCV
+      image: assets/icons/opencv.svg
+    - name: Docker
+      image: assets/icons/docker.svg
+    - name: Open AI
+      image: assets/icons/openai.svg
+    - name: LangChain
+      image: assets/icons/langchain.svg
+    - name: Stability AI
+      image: assets/icons/stabilityai.png

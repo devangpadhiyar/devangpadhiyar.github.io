@@ -1,17 +1,79 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-- title: Software Engineer, Google, UK
-  from: 2018
+- title: Senior Software Engineer
+  organization: Simplified, TLDR Technologies Inc, San Francisco, USA (Remote)
   to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  description:
+    - Led thedevelopment of AI-powered video automation and subtitle generation and
+      repurposing media projects.
+    - Delivered a scalable multi-tenant solution, enhancing system architecture and efficiency.
+    - Implemented low-level browser APIs to streamline media processing and interactions.
+    - Developed interactive canvas applications using Fabric.js for dynamic media content.
+    - Improved database performance by reducing round trips by 30-40% through custom
+      cache plugin implementation.
+    - Managed cloud infrastructure across AWS, GCP, and Azure, optimizing for performance
+      and scalability.
+    - Leveraged cutting-edge AI technologies, including Langchain, large language models
+      (LLMs), and generative AI for innovative solutions.
+    - Built and optimized media processing pipelines using FFmpeg for encoding, decoding, and
+      streaming.
+    - Strengthened security by enforcing cross-site asset restrictions and integrating signed APIs
+      to prevent unauthorized access.
+
+- title: Senior Software Engineer
+  organization: Aubergine Solutions Pvt Ltd, Ahmedabad, IN
+  from: Nov, 2020
+  to: Nov, 2022
+  description:
+    - Developed and integrated backend application using GraphQL and Graphene with
+    - Django to enhance data querying and API performance.
+    - Led and mentored e-commerce projects, driving development and implementation of key
+      features.
+    - Designed and implemented custom Shopify plugins to extend functionality and improve
+      user experience.
+    - Integrated social media connector APIs to enable seamless interaction and data
+      exchange across platforms.
+    - Implemented a secure Dwolla custom payment gateway, ensuring robust infrastructure
+      and transaction security.
+    - Enhanced Shopify's inventory management system by extending its module capabilities for better control and tracking.
+
+
+
+- title: Software Engineer
+  organization: Nividata Consultancy, Ahmedabad, IN
+  from: March, 2018
+  to: Nov, 2020
+  description:
+    - Began career as a backend engineer, focusing on foundational skills and technologies. Specialized in fintech sector, with expertise in blockchain technology and cryptocurrency trading systems.
+    - Engineered web scraping solutions to generate over 10,000 restaurant leads efficiently.
+      Built and maintained solutions for blockchain node communication, enhancing network
+      operations.
+    - Contributed to projects in learning management and education sectors, developing
+      tailored solutions using NLP and Machine learning algorithms.
+    - Led a small team in creating automated marking system for ed-tech domain, improving
+      grading efficiency.
+
+
+
+- title: Assistant Technical Consultant
+  from: 2013
+  to: 2017
+  organization: Intech Systems Pvt Limited, Ahmedabad, IN
+  description:
+    - Worked in a Microsoft Dynamics AX ERP
+    - Developed customized reports using SQL Server Reporting Service
+    - Experienced working on x++ language
+    - Worked on complex MIS reports which include 15-20 matrices
+    - Worked on HRM, Accounts receivable and Payable, Manufacturing, and Inventory management modules
+
+
+
+- title: BE Information Technology
+  from: 2013
+  to: 2017
+  organization: LD College of Engineering, Ahmedabad, IN
+  description:
+    - 8.07 GPA/CGPA
+    - Graduation with Distinction
+    - Java Internship, Digimation Technologies (Royal technosoft pvt ltd), Completed 2017
+    - Capstone Project - Speech based and Mobile Controlled Home automation, (Programming the microcontroller and write a pseudo mobile app for controlling the home appliances and various other devices )
+    - Professional Development Studies - Big data and Analytics, 2017
+

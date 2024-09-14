@@ -1,9 +1,8 @@
 ### Site Settings ###
 title               : Devang Padhiyar
 description         : >-
-                      I turn coffee :coffee: into code,
-                      use tabs over spaces
-                      and never broke production.
+                      I turn coffee ☕ into code... and sometimes bugs 🐞 into features!
+                      Code Craftsman by Day 🛠️  and AI Whisperer 🤖 at night.
 baseurl             : ""            # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : devangpadhiyar.github.io      # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : yousinix/portfolYOU

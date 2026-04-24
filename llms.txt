@@ -1,0 +1,50 @@
+---
+permalink: /llms.txt
+layout: null
+---
+# Devang Padhiyar
+
+> Senior Software Engineer (remote) at Simplified, TLDR Technologies Inc. — building LLM-powered video agents, fully agentic pipelines, and end-to-end agent orchestration. Backend-heavy generalist with a decade of production experience across Python, TypeScript, Django, React, and multi-cloud.
+
+## What I'm working on
+
+- **LLM-powered video agents** — AI-driven video generation, repurposing, and subtitle workflows.
+- **Fully agentic pipelines** — end-to-end, stateful multi-step agent orchestration with LangGraph.
+- **In-app AI copilots** — user-facing copilots with CopilotKit for media workflows.
+- **Prompt engineering & evaluation** — systematic prompt optimization with eval harnesses for production LLM features.
+- **Agentic coding workflows** — full automation of coding pipelines (code gen, PR review, test authoring, CI/CD) with Claude Code and Cursor.
+
+## AI / LLM stack
+
+- Models: Anthropic Claude, OpenAI GPT, Stability AI
+- Frameworks: LangGraph, LangChain, CopilotKit
+- Protocols: MCP (Model Context Protocol)
+- Tooling: Claude Code, Cursor
+
+## Core engineering stack
+
+- Languages: Python, TypeScript, JavaScript, Node.js, C++
+- Backend: Django, Celery, GraphQL, Express.js
+- Frontend: React, Fabric.js
+- Data: PostgreSQL, MySQL, MongoDB, Redis, RabbitMQ
+- Cloud: AWS, GCP, Azure, DigitalOcean
+- Media: FFmpeg, OpenCV
+
+## Key links
+
+- Site: https://devangpadhiyar.github.io
+- About: https://devangpadhiyar.github.io/about/
+- Projects: https://devangpadhiyar.github.io/projects/
+- Blog: https://devangpadhiyar.github.io/blog/
+- Resume (PDF): https://devangpadhiyar.github.io/assets/resume.pdf
+- GitHub: https://github.com/devangpadhiyar
+- LinkedIn: https://www.linkedin.com/in/devang-padhiyar
+- Stack Overflow: https://stackoverflow.com/users/7852189/devang-padhiyar
+
+## Career highlights
+
+- **Simplified, TLDR Technologies Inc.** — Senior Software Engineer (present). LLM video agents, agentic pipelines, multi-agent orchestration, prompt engineering, agentic coding automation.
+- **Aubergine Solutions Pvt Ltd** — Senior Software Engineer (2020–2022). Django + GraphQL backends, Shopify plugins, custom Dwolla payments, e-commerce leadership.
+- **Nividata Consultancy** — Software Engineer (2018–2020). Fintech and blockchain, NLP/ML for ed-tech, team lead on automated marking systems.
+- **Intech Systems Pvt Ltd** — Assistant Technical Consultant (2017–2018). Microsoft Dynamics AX / x++.
+- **Education** — BE Information Technology, LD College of Engineering, Ahmedabad (8.07 CGPA, 2017).

@@ -2,21 +2,14 @@
   organization: Simplified, TLDR Technologies Inc, San Francisco, USA (Remote)
   to: present
   description:
-    - Led thedevelopment of AI-powered video automation and subtitle generation and
-      repurposing media projects.
-    - Delivered a scalable multi-tenant solution, enhancing system architecture and efficiency.
-    - Implemented low-level browser APIs to streamline media processing and interactions.
-    - Developed interactive canvas applications using Fabric.js for dynamic media content.
-    - Improved database performance by reducing round trips by 30-40% through custom
-      cache plugin implementation.
-    - Managed cloud infrastructure across AWS, GCP, and Azure, optimizing for performance
-      and scalability.
-    - Leveraged cutting-edge AI technologies, including Langchain, large language models
-      (LLMs), and generative AI for innovative solutions.
-    - Built and optimized media processing pipelines using FFmpeg for encoding, decoding, and
-      streaming.
-    - Strengthened security by enforcing cross-site asset restrictions and integrating signed APIs
-      to prevent unauthorized access.
+    - Designed and shipped LLM-powered video agents for AI-driven video generation, repurposing, and subtitle workflows.
+    - Architected fully agentic, end-to-end pipelines using LangGraph for stateful multi-step orchestration.
+    - Built user-facing AI copilots with CopilotKit and designed multi-agent coordination patterns across media workflows.
+    - Led prompt engineering and evaluation — systematic prompt optimization with eval harnesses for production LLM features.
+    - Automated the full coding pipeline (code generation, PR review, test authoring, CI/CD) with agentic coding workflows using Claude Code and Cursor.
+    - Delivered a scalable multi-tenant architecture using low-level browser APIs and Fabric.js canvas apps for dynamic media.
+    - Built FFmpeg media processing pipelines for encoding, decoding, and streaming across AWS, GCP, and Azure.
+    - Cut database round trips by 30–40% via a custom cache plugin, and hardened security with signed asset APIs and cross-site restrictions.
 
 - title: Senior Software Engineer
   organization: Aubergine Solutions Pvt Ltd, Ahmedabad, IN

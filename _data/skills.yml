@@ -50,21 +50,32 @@
     - name: Azure
       image: assets/icons/azure.svg
 
-- name: Other Miscellaneous Tools
+- name: AI / LLM Stack
+  items:
+    - name: Open AI
+      image: assets/icons/openai.svg
+    - name: Anthropic
+      image: assets/icons/anthropic.svg
+    - name: LangChain
+      image: assets/icons/langchain.svg
+    - name: LangGraph
+      image: assets/icons/langgraph.svg
+    - name: CopilotKit
+      image: assets/icons/copilotkit.svg
+    - name: MCP
+      image: assets/icons/mcp.svg
+    - name: Stability AI
+      image: assets/icons/stabilityai.png
+
+- name: Media & Data
   items:
     - name: FFmpeg
       image: assets/icons/ffmpeg.svg
+    - name: OpenCV
+      image: assets/icons/opencv.svg
     - name: Pandas
       image: assets/icons/pandas.svg
     - name: Numpy
       image: assets/icons/numpy.svg
-    - name: OpenCV
-      image: assets/icons/opencv.svg
     - name: Docker
       image: assets/icons/docker.svg
-    - name: Open AI
-      image: assets/icons/openai.svg
-    - name: LangChain
-      image: assets/icons/langchain.svg
-    - name: Stability AI
-      image: assets/icons/stabilityai.png

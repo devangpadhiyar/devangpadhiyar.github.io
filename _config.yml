@@ -1,17 +1,32 @@
 ### Site Settings ###
 title               : Devang Padhiyar
 description         : >-
-                      I turn coffee ☕ into code... and sometimes bugs 🐞 into features!
-                      Code Craftsman by Day 🛠️  and AI Whisperer 🤖 at night.
+                      Half my coworkers are LLMs now 🤖👔 — shipping video agents,
+                      multi-agent orchestration, and MCP-powered tools at Simplified.
+url                 : "https://devangpadhiyar.github.io"
+lang                : en
 baseurl             : ""            # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : devangpadhiyar.github.io      # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : yousinix/portfolYOU
 open_new_tab        : true                    # Opens external URLs in new tab (works for posts, projects and navbar only)
 resume_url          : /assets/resume.pdf
 
+### SEO / Social ###
+# Add your GSC token after verifying the site at https://search.google.com/search-console
+google_site_verification: "google56177102b85cd152"
+social:
+  name: Devang Padhiyar
+  links:
+    - https://github.com/devangpadhiyar
+    - https://www.linkedin.com/in/devang-padhiyar
+    - https://stackoverflow.com/users/7852189/devang-padhiyar
+
+
 ### Plugins ###
 plugins:
   - jemoji
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 
 ### Navbar Settings ###

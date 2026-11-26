@@ -1,19 +1,16 @@
-<div class="col">
-    {% for skill in site.data.skills %}
-    <div class="row mt-4 wow fadeInUp" data-wow-duration="0.4s">
-        <div class="col h5">{{ skill.name }}</div>
-    </div>
-    <div class="row">
-        {% for item in skill.items %}
-        <div class="col-4 col-md-2 d-flex flex-column align-items-stretch wow fadeInUp"
-             data-wow-duration="0.4s">
-            <img alt="{{ item.name }}" class="rounded w-100 flex-grow-1" src="{{ item.image | relative_url }}"
-                 style="object-fit: contain; height: 76px;">
-            <small class="text-center">
-                {{ item.name }}
-            </small>
-        </div>
-        {% endfor %}
-    </div>
-    {% endfor %}
+<div class="skills">
+  {%- for tier in site.data.skills -%}
+  <section class="tier">
+    <h3 class="tier__h">{{ tier.tier }}</h3>
+    {%- if tier.note %}<p class="tier__note">{{ tier.note }}</p>{% endif -%}
+    <ul class="tier__grid">
+      {%- for s in tier.items -%}
+      <li class="tier__item" style="--i:{{ forloop.index0 }}"{% if s.artifact %} title="{{ s.name }} — {{ s.artifact }}"{% endif %}>
+        <img src="{{ s.icon | relative_url }}" alt="" width="40" height="40" loading="lazy" decoding="async">
+        <span>{{ s.name }}</span>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </section>
+  {%- endfor -%}
 </div>

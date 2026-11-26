@@ -1,0 +1,10 @@
+{%- assign p = include.project -%}
+<a class="pcard{% if p.featured %} pcard--featured{% endif %}" href="{{ p.url | relative_url }}">
+  {%- if p.role %}<span class="pcard__role">{{ p.role }}</span>{% endif -%}
+  <h3 class="pcard__t">{{ p.name | default: p.title }}</h3>
+  <p class="pcard__d">{{ p.description }}</p>
+  <span class="pcard__meta">
+    {%- if p.client %}<span class="chip chip--client">via {{ p.client }}</span>{% endif -%}
+    {%- for t in p.tools limit: 4 -%}<span class="chip">{{ t }}</span>{%- endfor -%}
+  </span>
+</a>

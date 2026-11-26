@@ -1,0 +1,65 @@
+<section class="nle scene" data-scene data-screen="demo" data-no="02" data-take="3" data-slate="LIVE DEMO" data-pose="hide" aria-labelledby="nle-h">
+  <div class="nle__head">
+    <h2 id="nle-h">Video, end to end</h2>
+    <p class="nle__lede">At <a href="https://simplified.com" target="_blank" rel="noopener">Simplified</a> I led video across the whole surface — the editor, AI generation, auto-captioning, and turning long footage into short-form clips — before moving on to the agents that drive it. Under all of it sits the same machinery: layers, tracks, a playhead and a clock. Here's a working one.</p>
+  </div>
+
+  <div class="nle__app" role="group" aria-label="Miniature video editor demonstration">
+    <!-- preview canvas -->
+    <div class="nle__stage">
+      <div class="nle__canvas" id="nle-canvas">
+        <div class="nle__layer nle__layer--bg"></div>
+        <div class="nle__layer nle__layer--title"><span>Scenes AI</span></div>
+        <div class="nle__layer nle__layer--sub"><span>episode 04</span></div>
+        <div class="nle__layer nle__layer--cap"><span></span></div>
+      </div>
+      <div class="nle__transport">
+        <button class="nle__btn" id="nle-play" type="button" aria-label="Pause">
+          <svg viewBox="0 0 12 14" width="11" height="13" aria-hidden="true"><rect x="1" y="1" width="3.2" height="12" rx="1"/><rect x="7.8" y="1" width="3.2" height="12" rx="1"/></svg>
+        </button>
+        <span class="nle__tc" id="nle-tc">00:00:00</span>
+        <span class="nle__fps">30 fps · 09:16</span>
+      </div>
+    </div>
+
+    <!-- timeline -->
+    <div class="nle__timeline" id="nle-timeline">
+      <div class="nle__ruler" aria-hidden="true"></div>
+      <div class="nle__tracks">
+        <div class="nle__track" data-kind="video">
+          <span class="nle__tname">V1</span>
+          <div class="nle__lane">
+            <div class="nle__clip nle__clip--v" style="--s:0;--d:34"><span>title.mp4</span></div>
+            <div class="nle__clip nle__clip--v" style="--s:36;--d:40"><span>b-roll.mp4</span></div>
+          </div>
+        </div>
+        <div class="nle__track" data-kind="text">
+          <span class="nle__tname">T1</span>
+          <div class="nle__lane">
+            <div class="nle__clip nle__clip--t" style="--s:6;--d:22"><span>captions</span></div>
+            <div class="nle__clip nle__clip--t" style="--s:44;--d:28"><span>captions</span></div>
+          </div>
+        </div>
+        <div class="nle__track" data-kind="audio">
+          <span class="nle__tname">A1</span>
+          <div class="nle__lane">
+            <div class="nle__clip nle__clip--a" style="--s:0;--d:78">
+              <canvas class="nle__wave" id="nle-wave" aria-hidden="true"></canvas>
+              <span>score.wav</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nle__playhead" id="nle-playhead" aria-hidden="true"></div>
+    </div>
+  </div>
+  <ul class="chips nle__chips">
+    <li class="chip">timeline editor</li>
+    <li class="chip">AI video generation</li>
+    <li class="chip">auto-captions · 30+ languages</li>
+    <li class="chip">long-form → short-form</li>
+    <li class="chip">voice &amp; TTS</li>
+    <li class="chip">render pipeline</li>
+  </ul>
+  <p class="nle__note">Drag the timeline to scrub. Everything here is DOM and canvas — no video file, no library.</p>
+</section>

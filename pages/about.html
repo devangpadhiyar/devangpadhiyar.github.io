@@ -1,51 +1,126 @@
 ---
-layout: page
-title: About
+layout: default
 permalink: /about/
-weight: 3
-description: "Devang Padhiyar — Senior Software Engineer building LLM-powered video agents, fully agentic pipelines, and agent orchestration (LangGraph, CopilotKit) at Simplified. Prompt engineering, agentic coding, and end-to-end automation."
+title: About
+seo:
+  type: ProfilePage
+description: "Devang Padhiyar — Senior Software Engineer at Simplified (LLM agents, led AI video) and Founding Engineer at Scenes AI. Nine years across enterprise ERP, crypto, e-commerce and AI agents."
 ---
 
-<h1>About me</h1>
+<article class="about">
 
-<br/>
-<p>
-    Hi I am <strong>{{ site.author.name }}</strong> :wave:,
-</p>
+  <header class="id">
+    <picture class="id__pic">
+      <source srcset="{{ '/assets/devang-cutout.webp' | relative_url }}" type="image/webp">
+      <img class="id__img" src="{{ '/assets/devang-cutout.png' | relative_url }}" alt="Devang Padhiyar" width="646" height="760" loading="eager" decoding="async" fetchpriority="high">
+    </picture>
+    <div class="id__txt">
+      <h1>{{ site.author.name }}</h1>
+      <p class="id__roles">
+        <span>Founding Engineer · <a href="https://usescenes.com" target="_blank" rel="noopener">Scenes AI</a></span>
+        <span>Senior Software Engineer · <a href="https://simplified.com" target="_blank" rel="noopener">Simplified</a></span>
+      </p>
+      <p class="id__meta">{{ site.author.location }} · {{ site.author.timezone }} · remote <span class="id__avail">{{ site.author.availability }}</span></p>
+    </div>
+  </header>
 
-<p>I'm a Senior Software Engineer with a backend-heavy toolkit — Python, JavaScript, TypeScript, Node.js, C/C++ —
-    and a soft spot for systems that scale across finance, e-commerce, and multimedia 🛠️💻. Half my coworkers are
-    LLMs now 🤖👔, and I like it that way.</p>
+  <section class="glance" aria-labelledby="glance-h">
+    <h2 id="glance-h">At a glance</h2>
+    <dl class="glance__dl">
+      <dt>Now</dt><dd>Senior SWE at Simplified, building its production LLM agents after leading the AI video team. Founding engineer of Scenes AI, a side venture backed by Simplified.</dd>
+      <dt>Focus</dt><dd>Agent orchestration, durable execution, LLM video pipelines, agent infrastructure.</dd>
+      <dt>Languages</dt><dd>Python · TypeScript · JavaScript · C++</dd>
+      <dt>Ships with</dt><dd>LangGraph · Mastra · CopilotKit · MCP · FastAPI · Django · PostgreSQL · Redis · FFmpeg</dd>
+      <dt>Shipped</dt><dd><a href="https://usescenes.com" target="_blank" rel="noopener">Scenes AI</a> · Simplified Video · <a href="https://monicaandandy.com" target="_blank" rel="noopener">Monica&nbsp;+&nbsp;Andy</a> · <a href="https://localcoinswap.com" target="_blank" rel="noopener">LocalCoinSwap</a> · <a href="https://progressay.com" target="_blank" rel="noopener">Progressay</a> · Microsoft Dynamics AX</dd>
+      <dt>Open source</dt><dd><a href="https://github.com/devangpadhiyar/langrove" target="_blank" rel="noopener">Langrove</a> (author) · upstream contributions to <a href="https://github.com/mastra-ai/mastra" target="_blank" rel="noopener">Mastra</a> · django-durationwidget · django-validators</dd>
+      <dt>Community</dt><dd><a href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" target="_blank" rel="noopener">Stack Overflow — 3,715 reputation</a>, 3 gold / 26 silver / 42 bronze. Top tags: django, python.</dd>
+      <dt>Education</dt><dd>BE Information Technology, LD College of Engineering, Ahmedabad — 8.07 CGPA, Distinction.</dd>
+    </dl>
+  </section>
 
-<p>Right now I'm remote at <strong>Simplified, TLDR Technologies Inc.</strong>, where I design and ship
-    <strong>LLM-powered video agents</strong> 🎬🤖 — fully agentic, end-to-end pipelines for AI-driven video
-    generation, repurposing, and subtitling. I build <strong>agent orchestration</strong> with
-    <strong>LangGraph</strong>, user-facing AI copilots with <strong>CopilotKit</strong>, and spend a suspicious
-    amount of time on <strong>prompt engineering &amp; evaluation</strong> so the agents actually behave in
-    production. On the engineering side, I automate the full coding pipeline — code gen, PR review, test authoring,
-    CI/CD — with <strong>agentic coding workflows</strong> using Claude Code and Cursor ⚡. And yes, there's still
-    plenty of FFmpeg, multi-cloud (AWS / GCP / Azure), and database work underneath it all.</p>
+  <div class="prose">
+    <p>I'm a backend-heavy generalist who ended up building the thing that builds the thing. Nine years in, my work has moved from enterprise ERP through crypto and e-commerce into AI agents — and the throughline is systems that have to keep running when something fails halfway.</p>
 
-<p>Before Simplified I led backend and e-commerce work at <a href="https://aubergine.co" target="_blank">Aubergine
-    Solutions</a> 🚀, and started my career at Nividata building fintech and blockchain systems 🔐💰. Back when I
-    was a programming newbie 🧑‍💻, I dabbled in IoT projects 🌐 and low-level C/C++.</p>
+    <p>Right now that means two things. At <strong>Simplified</strong> I led the AI video team of up to five engineers — text-to-video, AI voices and cloning, captions, long-form repurposed into clips, 577K+ videos made — and now build its production LLM agents end to end. On the side I'm the founding engineer of <strong>Scenes AI</strong>, an agent-driven video studio backed by Simplified, where the hard part is keeping a character recognisably themselves across six episodes.</p>
 
-<p>I'm a regular on <a href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" target="_blank">StackOverflow</a>
-    and <a href="https://github.com/{{ site.author.github }}" target="_blank">GitHub</a>, with a shelf of awards and
-    badges 🏅. My tech journey is powered by an IT degree, Scrum Master certifications, and an unquenchable thirst
-    for learning — plus strong coffee ☕.</p>
+    <p>The rest of my time goes to agent infrastructure. I wrote <a href="https://github.com/devangpadhiyar/langrove" target="_blank" rel="noopener">Langrove</a>, a self-hosted drop-in alternative to LangGraph Cloud, and I send fixes upstream to the agent frameworks I build on, like <a href="https://github.com/mastra-ai/mastra" target="_blank" rel="noopener">Mastra</a> — mostly to the unglamorous half, where runs resume on a different worker than they started on and traces have to survive the hop.</p>
+  </div>
 
-<p>Curious about my work? See the <a href="/projects/">Projects</a> page or read the <a href="/blog/">Blog</a>.</p>
+  <section class="arc" aria-labelledby="arc-h">
+    <h2 id="arc-h">The arc</h2>
+    <p class="arc__line">enterprise ERP → crypto &amp; fintech → e-commerce &amp; payments → EdTech AI → LLM agents &amp; agent infrastructure</p>
+    <p class="arc__note">Five domains, nine years, a nameable product in each. I've been the one shipping to someone else's spec on an agency deadline, and the one deciding the spec. Both are useful.</p>
+  </section>
 
+  <section class="diff" aria-labelledby="diff-h">
+    <h2 id="diff-h">Career, as a diff</h2>
+<pre class="diff__code"><code><span class="hunk">@@ 2017 → 2026 @@</span>
+<span class="ctx">  Assistant Technical Consultant   # Microsoft Dynamics AX, x++, SSRS</span>
+<span class="ctx">  Software Engineer                # LocalCoinSwap, Progressay — via Nividata</span>
+<span class="ctx">  Senior Software Engineer         # Monica + Andy — via Aubergine</span>
+<span class="add">+ Senior Software Engineer         # led video @ Simplified</span>
+<span class="add">+ Founding Engineer                # Scenes AI (side venture)</span>
+<span class="add">+ stack: [LangGraph, Mastra, CopilotKit, MCP, FastAPI, FFmpeg]</span>
+<span class="add">+ oss:   [langrove, mastra-ai/mastra]</span>
+</code></pre>
+    <p class="diff__note">Nothing here is a deletion — the ERP and Django years are what the agent work stands on.</p>
+  </section>
 
-<h2 class="mt-4">Skills</h2>
+  <section class="how" aria-labelledby="how-h">
+    <h2 id="how-h">What I keep running into</h2>
+    <p class="how__lede">Nine years, five domains, and the same few problems wearing different clothes.</p>
+    <div class="how__grid">
+      <article class="how__card">
+        <h3>Two renderers always drift apart</h3>
+        <p>A canvas preview and a frame-by-frame render disagree the moment an asset loads late. Most "rendering bugs" are readiness bugs in costume.</p>
+        <span class="how__where">Simplified · video export</span>
+      </article>
+      <article class="how__card">
+        <h3>State that outlives the process</h3>
+        <p>A run that can't resume on a worker that never saw it start isn't durable. Same problem as escrow that must survive a node restart.</p>
+        <span class="how__where">Langrove · LocalCoinSwap</span>
+      </article>
+      <article class="how__card">
+        <h3>Someone else's client is the spec</h3>
+        <p>Building a drop-in replacement, or a Shopify extension, means the existing API is fixed. You don't get to redesign it to suit your implementation.</p>
+        <span class="how__where">Langrove · Monica + Andy</span>
+      </article>
+      <article class="how__card">
+        <h3>The demo is not the product</h3>
+        <p>Cutting one good clip from an hour of footage is a demo. Doing it repeatably, at publishable quality, is months.</p>
+        <span class="how__where">Simplified · repurpose</span>
+      </article>
+      <article class="how__card">
+        <h3>Text is never just text</h3>
+        <p>Canvas has no wrapping, no kerning, no line box. Animate per character and you destroy the shaping — silently, and only for some languages.</p>
+        <span class="how__where">Simplified · captions</span>
+      </article>
+      <article class="how__card">
+        <h3>Deterministic beats clever</h3>
+        <p>Anything reading the wall clock, or an unseeded random, makes a bug unfalsifiable. Render as a pure function of frame and document.</p>
+        <span class="how__where">everywhere, eventually</span>
+      </article>
+    </div>
+  </section>
 
-<div class="mt-3 row">
+  <section class="home-sec" aria-labelledby="skills-h">
+    <h2 id="skills-h">Stack</h2>
     {% include skills.html %}
-</div>
+  </section>
 
-<h2 class="mt-4">Experience</h2>
+  <section class="home-sec" aria-labelledby="tl-h">
+    <h2 id="tl-h">Experience</h2>
+    {% include timeline.html %}
+  </section>
 
-<div class="row">
-    {% include about/timeline.html %}
-</div>
+  <section class="home-sec contact" aria-labelledby="c-h">
+    <h2 id="c-h">Contact</h2>
+    <p class="contact__lede">{{ site.author.availability }}. Best reached by email.</p>
+    <p class="contact__mail">
+      <button class="btn btn--primary btn--magnetic" id="copy-email-2" data-email="{{ site.author.email }}" type="button">Copy email</button>
+      <a class="btn btn--magnetic" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+    </p>
+    {% include social.html %}
+  </section>
+
+</article>

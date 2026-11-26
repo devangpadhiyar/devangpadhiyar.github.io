@@ -1,81 +1,92 @@
-- name: Languages
+# Tiers are evidence-based (plan §0f-7), not self-rated percentages.
+# Where a tier is uncertain, the item drops to the LOWER tier.
+- tier: Build with daily
+  note: Core stack — the tools behind Langrove, Scenes AI, and the Mastra contributions.
   items:
     - name: Python
-      image: assets/icons/python.svg
-    - name: Javascript
-      image: assets/icons/javascript.svg
-    - name: Typescript
-      image: assets/icons/typescript.svg
-    - name: NodeJS
-      image: assets/icons/node.svg
-    - name: C++
-      image: assets/icons/cpp.svg
-
-- name: Frameworks and Libraries
-  items:
+      icon: assets/icons/python.svg
+      artifact: Langrove, agent pipelines
     - name: Django
-      image: assets/icons/django.svg
-    - name: Celery
-      image: assets/icons/celery.png
-    - name: ReactJS
-      image: assets/icons/reactjs.svg
-    - name: ExpressJS
-      image: assets/icons/expressjs.png
-    - name: GraphQL
-      image: assets/icons/graphql.svg
-
-- name: Databases and relevant tools
-  items:
-    - name: PostgreSQL
-      image: assets/icons/postgresql.svg
-    - name: MySQL
-      image: assets/icons/mysql.svg
-    - name: MongoDB
-      image: assets/icons/mongodb.svg
-    - name: SQL Server
-      image: assets/icons/sql_server.png
-    - name: Redis
-      image: assets/icons/redis.svg
-    - name: RabbitMQ
-      image: assets/icons/rabbitmq.svg
-
-- name: Cloud Services
-  items:
-    - name: AWS
-      image: assets/icons/aws.svg
-    - name: DigitalOcean
-      image: assets/icons/digitalocean.svg
-    - name: Google Cloud
-      image: assets/icons/gcp.svg
-    - name: Azure
-      image: assets/icons/azure.svg
-
-- name: AI / LLM Stack
-  items:
-    - name: Open AI
-      image: assets/icons/openai.svg
-    - name: Anthropic
-      image: assets/icons/anthropic.svg
-    - name: LangChain
-      image: assets/icons/langchain.svg
+      icon: assets/icons/django.svg
+      artifact: 171 Stack Overflow answer score
+    - name: TypeScript
+      icon: assets/icons/typescript.svg
+      artifact: Mastra contributions, CopilotKit
     - name: LangGraph
-      image: assets/icons/langgraph.svg
-    - name: CopilotKit
-      image: assets/icons/copilotkit.svg
-    - name: MCP
-      image: assets/icons/mcp.svg
-    - name: Stability AI
-      image: assets/icons/stabilityai.png
+      icon: assets/icons/langgraph.svg
+      artifact: agent orchestration; Langrove targets its SDK
+    - name: FastAPI
+      icon: assets/icons/fastapi.svg
+      artifact: Langrove API server
+    - name: PostgreSQL
+      icon: assets/icons/postgresql.svg
+      artifact: Langrove threads, runs, checkpoints
+    - name: Redis
+      icon: assets/icons/redis.svg
+      artifact: Langrove queue, pub/sub, event replay
 
-- name: Media & Data
+- tier: Ship with regularly
+  note: Reached for on most projects.
   items:
+    - name: Mastra
+      icon: assets/icons/mastra.svg
+      artifact: 6 merged upstream PRs
+    - name: MCP
+      icon: assets/icons/mcp.svg
+      artifact: internal tool servers
+    - name: CopilotKit
+      icon: assets/icons/copilotkit.svg
+      artifact: in-app AI copilots
+    - name: Celery
+      icon: assets/icons/celery.png
     - name: FFmpeg
-      image: assets/icons/ffmpeg.svg
-    - name: OpenCV
-      image: assets/icons/opencv.svg
-    - name: Pandas
-      image: assets/icons/pandas.svg
-    - name: Numpy
-      image: assets/icons/numpy.svg
+      icon: assets/icons/ffmpeg.svg
+      artifact: Scenes AI render pipeline
+    - name: React
+      icon: assets/icons/reactjs.svg
     - name: Docker
-      image: assets/icons/docker.svg
+      icon: assets/icons/docker.svg
+    - name: AWS
+      icon: assets/icons/aws.svg
+    - name: Google Cloud
+      icon: assets/icons/gcp.svg
+    - name: Anthropic
+      icon: assets/icons/anthropic.svg
+    - name: OpenAI
+      icon: assets/icons/openai.svg
+    - name: LangChain
+      icon: assets/icons/langchain.svg
+    - name: GraphQL
+      icon: assets/icons/graphql.svg
+    - name: JavaScript
+      icon: assets/icons/javascript.svg
+    - name: Node.js
+      icon: assets/icons/node.svg
+
+- tier: Working knowledge
+  note: Used in production, not daily.
+  items:
+    - name: C++
+      icon: assets/icons/cpp.svg
+    - name: Express.js
+      icon: assets/icons/expressjs.png
+    - name: MongoDB
+      icon: assets/icons/mongodb.svg
+    - name: MySQL
+      icon: assets/icons/mysql.svg
+    - name: SQL Server
+      icon: assets/icons/sql_server.png
+    - name: RabbitMQ
+      icon: assets/icons/rabbitmq.svg
+    - name: Azure
+      icon: assets/icons/azure.svg
+    - name: DigitalOcean
+      icon: assets/icons/digitalocean.svg
+    - name: OpenCV
+      icon: assets/icons/opencv.svg
+    - name: Pandas
+      icon: assets/icons/pandas.svg
+    - name: NumPy
+      icon: assets/icons/numpy.svg
+    - name: Stability AI
+      icon: assets/icons/stabilityai.png

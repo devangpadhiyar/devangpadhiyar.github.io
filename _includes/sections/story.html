@@ -1,0 +1,32 @@
+{%- comment -%}
+  Full-screen scenes, one idea each. Real HTML first: without JS or with reduced motion these are plain
+  stacked blocks, fully visible. With motion (.film-on) each scene pins and cross-fades into the next.
+  Params: offset / limit select a slice of site.data.metrics.scenes so other scenes can sit in between.
+{%- endcomment -%}
+{%- for s in site.data.metrics.scenes offset: include.offset limit: include.limit -%}
+{%- if s.kind == 'metric' and s.source == nil -%}{%- continue -%}{%- endif -%}
+<section class="scene scene--pin scene--{{ s.kind }}{% if s.figure.size > 7 %} scene--long{% endif %}" data-scene data-screen="{{ s.key }}" data-no="{{ s.no }}" data-take="{{ s.take }}" data-slate="{{ s.slate }}" data-pose="{{ s.pose }}" aria-labelledby="sc-{{ s.key }}">
+  <div class="scene__inner">
+    {%- if s.kind == 'metric' -%}
+    <div class="scene__metric">
+      <p class="scene__kicker">{{ s.kicker }}</p>
+      <p class="scene__fig" id="sc-{{ s.key }}">{{ s.figure }}</p>
+      <p class="scene__label">{{ s.label }}</p>
+      {%- if s.facts -%}
+      <ul class="scene__facts">
+        {%- for f in s.facts -%}{%- if f.source -%}
+        <li style="--i:{{ forloop.index0 }}"><strong>{{ f.figure }}</strong><span>{{ f.label }}</span></li>
+        {%- endif -%}{%- endfor -%}
+      </ul>
+      {%- endif -%}
+    </div>
+    {%- else -%}
+    <div class="scene__copy">
+      <p class="scene__kicker">{{ s.kicker }}</p>
+      <h2 id="sc-{{ s.key }}" data-split="words">{{ s.title }}</h2>
+      <p class="scene__body">{{ s.body }}</p>
+    </div>
+    {%- endif -%}
+  </div>
+</section>
+{%- endfor -%}

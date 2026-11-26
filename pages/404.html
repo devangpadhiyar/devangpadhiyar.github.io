@@ -1,6 +1,17 @@
 ---
-layout: null
+layout: default
 permalink: /404.html
+title: Not found
 ---
 
-{% include 404.html %}
+<section class="nf">
+  <pre class="nf__term"><code><span class="c">$</span> cat {{ page.url }}
+cat: no such file or directory<span class="caret"></span></code></pre>
+  <h1>404</h1>
+  <p>That page doesn't exist — it may have moved.</p>
+  <p class="nf__links">
+    <a class="btn btn--primary" href="{{ '/' | relative_url }}">Home</a>
+    <a class="btn" href="{{ '/projects/' | relative_url }}">Projects</a>
+    {% if site.posts.size > 0 %}<a class="btn" href="{{ '/blog/' | relative_url }}">Writing</a>{% endif %}
+  </p>
+</section>

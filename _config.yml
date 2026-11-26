@@ -1,123 +1,79 @@
 ### Site Settings ###
 title               : Devang Padhiyar
 description         : >-
-                      Half my coworkers are LLMs now 🤖👔 — shipping video agents,
-                      multi-agent orchestration, and MCP-powered tools at Simplified.
+                      Senior Software Engineer in applied AI: production LLM agents and generative
+                      video at Simplified, and Founding Engineer of Scenes AI. Agent runtimes,
+                      video pipelines and the infrastructure under them.
 url                 : "https://devangpadhiyar.github.io"
 lang                : en
-baseurl             : ""            # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-repository          : devangpadhiyar.github.io      # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
-remote_theme        : yousinix/portfolYOU
-open_new_tab        : true                    # Opens external URLs in new tab (works for posts, projects and navbar only)
-resume_url          : /assets/resume.pdf
+baseurl             : ""
+resume_url          : /assets/Devang_Padhiyar_Resume.pdf
 
 ### SEO / Social ###
-# Add your GSC token after verifying the site at https://search.google.com/search-console
 google_site_verification: "google56177102b85cd152"
+twitter:
+  username: DevangDecodes
+  card: summary_large_image
 social:
   name: Devang Padhiyar
   links:
     - https://github.com/devangpadhiyar
     - https://www.linkedin.com/in/devang-padhiyar
     - https://stackoverflow.com/users/7852189/devang-padhiyar
-
+    - https://x.com/DevangDecodes
 
 ### Plugins ###
 plugins:
   - jemoji
   - jekyll-seo-tag
   - jekyll-sitemap
-
-
-### Navbar Settings ###
-nav_exclude:                                            # The following paths are excluded from navbar
-  - pages/tags.html
-  - pages/404.html
-  - pages/index.md
-  - documentation/partials/**                           # For Documentation Only
-  - pages/blog.html
-  - pages/projects.html
-
+  - jekyll-feed
 
 ### Author Info ###
 author:
   name              : Devang Padhiyar
-  image             : assets/devang_profile.jpg
-#  behance           : your_username
-# dribbble          : your_username
+  image             : assets/devang-avatar.png
   email             : devangpadhiyar700@gmail.com
   github            : devangpadhiyar
-# gitlab            : your_username
-# instagram         : your_username
-# kaggle            : your_username
   linkedin          : devang-padhiyar
-#  medium            : your_username
-# soundcloud        : your_username
-# spotify           : your_username
   stackoverflow     : 7852189/devang-padhiyar
-  phone             : +917567060070
-  resume            : assets/resume.pdf
-# tumblr            : your_username.tumblr.com
-# twitch            : your_username
-#  twitter           : your_username
-# vimeo             : your_username
-# youtube           : your_channel_name
-# keybase           : your_username
-
+  twitter           : DevangDecodes
+  location          : "Ahmedabad, IN"
+  timezone          : "UTC+5:30"
+  availability      : "Open to remote roles or relocation worldwide"
+  resume            : assets/Devang_Padhiyar_Resume.pdf
 
 ### Posts ###
 permalink: /blog/:title
-
 
 ### Collections ###
 collections:
   projects:
     output: true
     permalink: /projects/:name
-  elements:                                             # For Documentation Only
-    output: true                                        # For Documentation Only
 
-
-### Disqus ###
-disqus:
-  shortname: your-short-name-disqus                     # Your website Shortname on disqus
-
-
-### Analytics ###
-analytics:
-  enabled: false                                        # Set true to enable analytics
-  google:
-    tracking_id: your-google-tracking-id
-
-
-### Buy me a coffee ###
-# See https://www.buymeacoffee.com/
-buymeacoffee:
-  enabled: false
-  username: your_username
-  color: "#007bff"
-  message: "Thank you for visiting."                    # Message to be displayed aside from the button for a few seconds.
-  description: "Support me on Buy me a coffee!"
-
+### Sass ###
+sass:
+  style: compressed
 
 ### Defaults for collections ###
 defaults:
   - scope:
       path: ""
+    values:
+      image:
+        path: /assets/og-card.jpg
+        alt: "Devang Padhiyar — Senior Software Engineer, applied AI"
+  - scope:
+      path: ""
       type: "projects"
     values:
-      layout: "page"
-  - scope:                                              # For Documentation Only
-      path: ""                                          # For Documentation Only
-      type: "elements"                                  # For Documentation Only
-    values:                                             # For Documentation Only
-      layout: "element"                                 # For Documentation Only
+      layout: "project"
   - scope:
       path: ""
       type: "posts"
     values:
-      comments: false                                   # Set to true to enable disqus comments
-
+      layout: "post"
 
 ### Exclude from processing ###
 exclude:
@@ -126,3 +82,5 @@ exclude:
   - LICENSE
   - CLAUDE.md
   - "*.log"
+  - .idea/
+  - .claude/

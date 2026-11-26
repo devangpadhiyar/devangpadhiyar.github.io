@@ -1,0 +1,14 @@
+<section class="proof" aria-label="Credentials">
+  <ul class="proof__row">
+    {%- for m in site.data.metrics.proof_bar -%}
+      {%- if m.source -%}
+      <li class="proof__item">
+        <a href="{{ m.href }}"{% if m.href contains 'http' %} target="_blank" rel="noopener"{% endif %}>
+          <span class="proof__fig{% if m.kind != 'text' %} proof__fig--num{% endif %}"{% if m.kind == 'number' %} data-count="{{ m.figure | remove: ',' }}" data-format="comma"{% endif %}>{{ m.figure }}</span>
+          <span class="proof__label">{{ m.label }}</span>
+        </a>
+      </li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+</section>

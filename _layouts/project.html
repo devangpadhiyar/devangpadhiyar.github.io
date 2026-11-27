@@ -1,0 +1,29 @@
+---
+layout: default
+seo:
+  type: WebPage
+---
+<article class="project">
+  <header class="project__head">
+    {%- if page.role %}<p class="project__role">{{ page.role }}</p>{% endif -%}
+    <h1>{{ page.name | default: page.title }}</h1>
+    {%- if page.description %}<p class="lede">{{ page.description }}</p>{% endif -%}
+    <p class="project__meta">
+      {%- if page.client %}<span class="chip chip--client">Client project · via {{ page.client }}</span>{% endif -%}
+      {%- if page.years %}<span class="chip">{{ page.years }}</span>{% endif -%}
+      {%- if page.url_live %}<a class="chip chip--link" href="{{ page.url_live }}" target="_blank" rel="noopener">{{ page.url_live | remove: 'https://' | remove: 'www.' }} ↗</a>{% endif -%}
+      {%- if page.repo %}<a class="chip chip--link" href="{{ page.repo }}" target="_blank" rel="noopener">source ↗</a>{% endif -%}
+    </p>
+  </header>
+
+  <div class="prose">{{ content }}</div>
+
+  {%- if page.tools.size > 0 %}
+  <footer class="project__stack">
+    <h2>Stack</h2>
+    <ul class="chips">{% for t in page.tools %}<li class="chip">{{ t }}</li>{% endfor %}</ul>
+  </footer>
+  {% endif -%}
+
+  <p class="back"><a href="{{ '/projects/' | relative_url }}">← All projects</a></p>
+</article>

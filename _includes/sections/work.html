@@ -1,0 +1,43 @@
+{%- assign wn = site.data.work | size -%}
+<section class="work scene hreel" data-scene data-screen="work" data-no="06" data-take="1" data-slate="THE WORK" data-pose="hide" aria-labelledby="work-h" style="--n:{{ wn }}">
+  <div class="hreel__pin">
+  <div class="hreel__head">
+    <div>
+      <p class="scene__kicker">Scene 06 · Selected work</p>
+      <h2 id="work-h">The work</h2>
+    </div>
+    <p class="hreel__count" aria-hidden="true"><span class="hreel__now">01</span><span class="hreel__of"> / {% if wn < 10 %}0{% endif %}{{ wn }}</span></p>
+  </div>
+  <p class="work__lede">Same panel for everything, so you can compare like for like. Current roles first, then open source, then client work — most recent first.</p>
+
+  <div class="work__grid">
+    {%- for w in site.data.work -%}
+    <article class="wp wp--{{ w.accent }}" id="{{ w.id }}" aria-label="{{ forloop.index }} of {{ wn }}: {{ w.name }}">
+      {%- if w.shot -%}
+      <a class="wp__shot" href="{{ w.url }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+        <picture>
+          <source srcset="{{ '/assets/shots/' | append: w.shot | append: '.webp' | relative_url }}" type="image/webp">
+          <img src="{{ '/assets/shots/' | append: w.shot | append: '.jpg' | relative_url }}" alt="Screenshot of {{ w.name | escape }}" width="640" height="371" loading="lazy" decoding="async">
+        </picture>
+      </a>
+      {%- endif -%}
+      <div class="wp__body">
+        <header class="wp__head">
+          <p class="wp__meta"><span class="wp__role">{{ w.role }}</span><span class="wp__ctx">{{ w.context }}</span><span class="wp__yrs">{{ w.years }}</span></p>
+          <h3><a href="{{ w.url }}" target="_blank" rel="noopener">{{ w.name }} <span class="ext">↗</span></a></h3>
+        </header>
+        <p class="wp__what">{{ w.what }}</p>
+        <p class="wp__hard"><span class="wp__label">Hard part</span>{{ w.hard | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+        <ul class="chips">{% for c in w.chips %}<li class="chip">{{ c }}</li>{% endfor %}</ul>
+        <a class="wp__cta" href="{{ w.page | relative_url }}">Detail →</a>
+      </div>
+    </article>
+    {%- endfor -%}
+  </div>
+  <ol class="hreel__index" aria-label="Jump to a project">
+    {%- for w in site.data.work -%}
+    <li><a href="#{{ w.id }}" data-i="{{ forloop.index0 }}"><span>{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span> {{ w.name }}</a></li>
+    {%- endfor -%}
+  </ol>
+  </div>
+</section>

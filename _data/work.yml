@@ -1,0 +1,91 @@
+# Every panel uses the same fields. Honest ordering: current roles, then own OSS,
+# then client work (most recent first), then upstream contributions.
+- id: scenes
+  shot: scenes
+  name: Scenes AI
+  role: Founding Engineer
+  context: side venture
+  years: 2026 → now
+  url: https://usescenes.com
+  page: /projects/1-llm-video-agent-pipeline
+  what: Agent-driven AI video studio — serialized mini-dramas, shorts and tutorials from a prompt. 0 to 1 as the only engineer.
+  hard: Characters and locations staying the same across episodes, held by 4-view character sheets and named location anchors generated before any expensive render.
+  chips: [159 paying customers, 1,400+ sign-ups, Mastra + Inngest, 35-case eval suite, character sheets]
+  accent: gold
+
+- id: simplified
+  shot: simplified
+  name: Simplified
+  role: Senior Software Engineer
+  context: LLM agents · led AI video
+  years: 2022 → now
+  url: https://simplified.com
+  page: /projects/9-simplified-video-editor
+  what: Production LLM agents and the AI video stack of a content platform — generation, voices, captions, repurposing and rendering.
+  hard: Cutting an hour of footage into clips worth publishing — where to cut, how to reframe 16:9 into 9:16 without decapitating the speaker, and captioning it to read with the sound off.
+  chips: [VideoPilot agent, 577K+ videos, 40 models · 3 providers, LangGraph, Celery on GKE, FFmpeg]
+  accent: blue
+
+- id: langrove
+  shot: langrove
+  name: Langrove
+  role: Author
+  context: open source · MIT
+  years: 2026 → now
+  url: https://github.com/devangpadhiyar/langrove
+  page: /projects/6-langrove
+  what: A self-hosted, drop-in alternative to LangGraph Cloud — same API surface, your own infrastructure.
+  hard: Compatibility is the constraint. `langgraph_sdk.get_client()` has to work unmodified, so the existing client is the spec and you don't get to redesign the API.
+  chips: [FastAPI, PostgreSQL, Redis Streams, interrupt/resume, Agent Protocol]
+  accent: gold
+
+- id: monica
+  shot: monica-andy
+  name: Monica + Andy
+  role: Senior Engineer
+  context: client project · via Aubergine
+  years: 2020 → 2022
+  url: https://monicaandandy.com
+  page: /projects/8-monica-andy-registry
+  what: A universal baby registry for a DTC brand — add items from any store, gift funds, guided checklist.
+  hard: A registry that accepts items from anywhere on the web has to stay current without owning the catalogue, and move real money through ACH.
+  chips: [Django, GraphQL, Shopify, Dwolla]
+  accent: blue
+
+- id: lcs
+  shot: localcoinswap
+  name: LocalCoinSwap
+  role: Software Engineer
+  context: client project · via Nividata
+  years: 2018 → 2020
+  url: https://localcoinswap.com
+  page: /projects/7-localcoinswap
+  what: A non-custodial P2P crypto marketplace — users trade fiat for crypto while holding their own keys.
+  hard: Escrow without custody. Multi-signature transactions for BTC-family coins and smart contracts for ETH-family, so the platform can arbitrate a dispute but never move the funds itself.
+  chips: [Python, Django, multi-sig, blockchain nodes]
+  accent: blue
+
+- id: progressay
+  shot: progressay
+  name: Progressay
+  role: Led the project
+  context: client project · via Nividata
+  years: 2018 → 2020
+  url: https://progressay.com
+  page: /projects/10-progressay
+  what: Automated essay marking and grading for schools.
+  hard: The bar isn't accuracy, it's trust — a grade a teacher can't interrogate is a grade they won't use.
+  chips: [Python, NLP, machine learning]
+  accent: blue
+
+- id: upstream
+  name: Upstream contributions
+  role: Contributor
+  context: open source
+  years: 2026
+  url: https://github.com/mastra-ai/mastra
+  page: /projects/5-mastra-open-source
+  what: Fixes sent upstream to Mastra, the TypeScript agent framework, plus two published Django libraries.
+  hard: Durable execution — what breaks when an agent loop resumes on a worker that never saw it start.
+  chips: [TypeScript, Inngest, django-durationwidget, django-validators]
+  accent: dim

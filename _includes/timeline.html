@@ -1,0 +1,35 @@
+<ol class="tl">
+  {%- for e in site.data.timeline -%}
+  <li class="tl__item tl__item--{{ e.kind | default: 'employment' }}" style="--i:{{ forloop.index0 }}">
+    <div class="tl__when"><span>{{ e.from }}</span>{% if e.to %}<span class="tl__to">{{ e.to }}</span>{% endif %}</div>
+    <div class="tl__body">
+      <h3 class="tl__title">{{ e.title }}</h3>
+      <p class="tl__org">
+        {%- if e.url -%}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.organization }} <span class="ext">↗</span></a>{%- else -%}{{ e.organization }}{%- endif -%}
+        {%- if e.kind == 'independent' %} <span class="chip chip--key">side venture</span>{% endif -%}
+        {%- if e.client %} <span class="chip chip--client">client work</span>{% endif -%}
+      </p>
+
+      {%- if e.product -%}
+      <p class="tl__product">
+        <strong>{{ e.product }}</strong>{% if e.product_role %} <span class="tl__prole">{{ e.product_role }}</span>{% endif %}
+        <span class="tl__pdesc">{{ e.product_desc }}</span>
+      </p>
+      {%- endif -%}
+      {%- if e.products -%}
+      <ul class="tl__products">
+        {%- for p in e.products -%}
+        <li>
+          <strong>{% if p.url %}<a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.name }} <span class="ext">↗</span></a>{% else %}{{ p.name }}{% endif %}</strong>
+          {%- if p.role %} <span class="tl__prole">{{ p.role }}</span>{% endif %}
+          <span class="tl__pdesc">{{ p.desc }}</span>
+        </li>
+        {%- endfor -%}
+      </ul>
+      {%- endif -%}
+
+      <ul class="tl__desc">{% for d in e.description %}<li>{{ d }}</li>{% endfor %}</ul>
+    </div>
+  </li>
+  {%- endfor -%}
+</ol>

@@ -1,0 +1,4 @@
+<figure class="fig">
+  <img src="{{ include.image }}" alt="{{ include.caption | default: '' | strip_html }}" loading="lazy" decoding="async">
+  {%- if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif -%}
+</figure>

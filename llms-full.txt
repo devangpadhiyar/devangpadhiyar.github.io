@@ -1,0 +1,44 @@
+---
+permalink: /llms-full.txt
+layout: null
+---
+# {{ site.title }} — full site text
+
+> {{ site.description | strip_newlines | strip }}
+> Generated {{ site.time | date: "%Y-%m-%d" }}. Canonical: {{ site.url }}
+
+{% include_relative llms.txt %}
+
+---
+
+# PROJECTS
+
+{% assign projects = site.projects | sort: 'order' %}{% for p in projects %}
+## {{ p.name | default: p.title }}
+{% if p.role %}Role: {{ p.role }}{% endif %}{% if p.client %} · Client project via {{ p.client }}{% endif %}{% if p.years %} · {{ p.years }}{% endif %}
+{% if p.url_live %}Live: {{ p.url_live }}{% endif %}{% if p.repo %}Source: {{ p.repo }}{% endif %}
+Tools: {{ p.tools | join: ", " }}
+
+{{ p.description }}
+
+{{ p.content | strip_html | strip_newlines | replace: "  ", " " }}
+
+---
+{% endfor %}
+
+# EXPERIENCE
+
+{% for e in site.data.timeline %}
+## {{ e.title }} — {{ e.organization }}
+{{ e.from }}{% if e.to %} to {{ e.to }}{% endif %}{% if e.client %} · client work{% endif %}
+{% for d in e.description %}- {{ d }}
+{% endfor %}
+{% endfor %}
+
+{% if site.posts.size > 0 %}# WRITING
+
+{% endif %}{% for post in site.posts %}
+## {{ post.title }}
+{{ post.date | date: "%Y-%m-%d" }} · {{ site.url }}{{ post.url }}
+{{ post.description | default: post.excerpt | strip_html | strip_newlines }}
+{% endfor %}

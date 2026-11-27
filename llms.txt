@@ -4,47 +4,49 @@ layout: null
 ---
 # Devang Padhiyar
 
-> Senior Software Engineer (remote) at Simplified, TLDR Technologies Inc. — building LLM-powered video agents, fully agentic pipelines, and end-to-end agent orchestration. Backend-heavy generalist with a decade of production experience across Python, TypeScript, Django, React, and multi-cloud.
+> Senior Software Engineer at Simplified (production LLM agents; led its AI video team) and Founding Engineer at Scenes AI, a side venture backed by Simplified. Builds LLM agents, video pipelines, and open-source agent infrastructure. Nine years across enterprise ERP, crypto, e-commerce and AI. Based in Ahmedabad, IN (UTC+5:30), remote. Open to remote roles or relocation worldwide.
 
-## What I'm working on
+## Roles
 
-- **LLM-powered video agents** — AI-driven video generation, repurposing, and subtitle workflows.
-- **Fully agentic pipelines** — end-to-end, stateful multi-step agent orchestration with LangGraph.
-- **In-app AI copilots** — user-facing copilots with CopilotKit for media workflows.
-- **Prompt engineering & evaluation** — systematic prompt optimization with eval harnesses for production LLM features.
-- **Agentic coding workflows** — full automation of coding pipelines (code gen, PR review, test authoring, CI/CD) with Claude Code and Cursor.
+- **Senior Software Engineer — Simplified** (2022–present, remote). Led the AI video team (up to 5 engineers, 577K+ videos); now builds its production LLM agents (VideoPilot, on LangGraph and LangChain Deep Agents). Cut p95 inter-event streaming latency 295 → 69 ms; Celery pipeline at 200K+ jobs a day; 65% less GKE compute.
+- **Founding Engineer — Scenes AI** (side venture backed by Simplified, Jan 2026–present). Took an agent-driven AI video studio (React, Django, Mastra) from 0 to 1 as its only engineer: 1,400+ sign-ups and 159 paying customers in 8 months.
 
-## AI / LLM stack
+## Products I've shipped
 
-- Models: Anthropic Claude, OpenAI GPT, Stability AI
-- Frameworks: LangGraph, LangChain, CopilotKit
-- Protocols: MCP (Model Context Protocol)
-- Tooling: Claude Code, Cursor
+- **Scenes AI** (https://usescenes.com) — serialized AI video generation: mini-dramas, shorts, tutorials from a prompt. Consistency across episodes via 4-view character sheets and named location anchors. 13 visual styles, 26 caption styles with word-level timing, 30 voices per engine, up to 4K, SRT/VTT.
+- **Simplified Video** (https://simplified.com/ai-video) — text-to-video, AI script and voice generation, voice cloning, multilingual subtitles, long-video repurposing.
+- **Monica + Andy** (https://monicaandandy.com) — universal baby registry, Shopify inventory extensions, custom Dwolla payments. Client project via Aubergine Solutions. Role: Senior Engineer.
+- **LocalCoinSwap** (https://localcoinswap.com) — non-custodial P2P crypto marketplace; multi-sig BTC-family, smart contracts ETH-family, 300+ payment methods, 190+ countries. Client project via Nividata Consultancy.
+- **Progressay** (https://progressay.com) — AI-driven automated essay marking and grading for schools. Client project via Nividata Consultancy. Led the project.
+- **Microsoft Dynamics AX** — enterprise ERP: x++, SSRS reports, HRM/AR/AP/Manufacturing/Inventory modules.
 
-## Core engineering stack
+## Open source
 
-- Languages: Python, TypeScript, JavaScript, Node.js, C++
-- Backend: Django, Celery, GraphQL, Express.js
-- Frontend: React, Fabric.js
-- Data: PostgreSQL, MySQL, MongoDB, Redis, RabbitMQ
-- Cloud: AWS, GCP, Azure, DigitalOcean
-- Media: FFmpeg, OpenCV
+- **Langrove** (https://github.com/devangpadhiyar/langrove) — author. MIT, Python. Self-hosted, drop-in alternative to LangGraph Cloud: `langgraph_sdk.get_client()` works unmodified, `useStream()` SSE wire format, Agent Protocol. FastAPI + Postgres + Redis Streams, background runs with a DLQ, interrupt/resume, cron, pluggable auth.
+- **mastra-ai/mastra** (https://github.com/mastra-ai/mastra) — reported 23 durable-execution bugs (all fixed upstream) and authored 6 merged PRs: remote-worker resume (#19713), cross-process tool resolution (#19331), tool-call concurrency (#19329), trace/span nesting (#19313), thread titles (#19315), gcsfuse visibility (#19003).
+- **django-durationwidget**, **django-validators** — published Django libraries; 900K+ PyPI downloads (django-durationwidget 815K+).
 
-## Key links
+## Stack
+
+- Build with daily: Python, Django, TypeScript, LangGraph, FastAPI, PostgreSQL, Redis
+- Ship with regularly: Mastra, MCP, CopilotKit, Celery, FFmpeg, React, Docker, AWS, GCP
+- Working knowledge: C++, Express.js, MongoDB, MySQL, SQL Server, RabbitMQ, Azure, OpenCV, Pandas, NumPy
+
+## Community
+
+- Stack Overflow: 3,715 reputation, 3 gold / 26 silver / 42 bronze. Top tags: django (171), python (121), celery, django-rest-framework, postgresql.
+
+## Links
 
 - Site: https://devangpadhiyar.github.io
 - About: https://devangpadhiyar.github.io/about/
 - Projects: https://devangpadhiyar.github.io/projects/
-- Blog: https://devangpadhiyar.github.io/blog/
-- Resume (PDF): https://devangpadhiyar.github.io/assets/resume.pdf
+- Résumé: https://devangpadhiyar.github.io/assets/Devang_Padhiyar_Resume.pdf
 - GitHub: https://github.com/devangpadhiyar
+- X: https://x.com/DevangDecodes
 - LinkedIn: https://www.linkedin.com/in/devang-padhiyar
 - Stack Overflow: https://stackoverflow.com/users/7852189/devang-padhiyar
 
-## Career highlights
+## Education
 
-- **Simplified, TLDR Technologies Inc.** — Senior Software Engineer (present). LLM video agents, agentic pipelines, multi-agent orchestration, prompt engineering, agentic coding automation.
-- **Aubergine Solutions Pvt Ltd** — Senior Software Engineer (2020–2022). Django + GraphQL backends, Shopify plugins, custom Dwolla payments, e-commerce leadership.
-- **Nividata Consultancy** — Software Engineer (2018–2020). Fintech and blockchain, NLP/ML for ed-tech, team lead on automated marking systems.
-- **Intech Systems Pvt Ltd** — Assistant Technical Consultant (2017–2018). Microsoft Dynamics AX / x++.
-- **Education** — BE Information Technology, LD College of Engineering, Ahmedabad (8.07 CGPA, 2017).
+BE Information Technology, LD College of Engineering, Ahmedabad (2013–2017). 8.07 CGPA, Distinction.

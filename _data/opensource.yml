@@ -1,0 +1,85 @@
+# Flagship: own open-source project
+flagship:
+  name: langrove
+  repo: devangpadhiyar/langrove
+  url: https://github.com/devangpadhiyar/langrove
+  license: MIT
+  language: Python
+  tagline: Self-hosted, drop-in alternative to LangGraph Cloud deployments.
+  hook: "langgraph_sdk.get_client() works unmodified"
+  scale: "183 files · 80 Python modules · FastAPI + Postgres + Redis"
+  features:
+    - SSE streaming
+    - background runs w/ DLQ
+    - Postgres checkpointing
+    - cross-thread store
+    - cron scheduling
+    - interrupt / resume
+    - multitask strategies
+    - pluggable auth
+    - Agent Protocol
+  # you-vs-them capability facts, stated neutrally
+  comparison:
+    - feature: Self-hosted
+      them: false
+      us: true
+    - feature: Requires LangSmith
+      them: true
+      us: false
+    - feature: langgraph_sdk compatible
+      them: true
+      us: true
+    - feature: useStream() / Agent Chat UI
+      them: true
+      us: true
+    - feature: Open source (MIT)
+      them: false
+      us: true
+
+# Upstream contributions
+contributions:
+  - repo: mastra-ai/mastra
+    url: https://github.com/mastra-ai/mastra
+    description: Open-source TypeScript agent framework (Apache 2.0)
+    reported_bugs: 23   # durable-execution bugs, all fixed upstream
+    opened: 14
+    merged: 6
+    themes: durable execution, tracing and tool-call concurrency
+    prs:
+      - n: 19713
+        title: "persist durable suspend metadata when the agentic loop runs on a remote worker"
+        area: core
+        url: https://github.com/mastra-ai/mastra/pull/19713
+      - n: 19331
+        title: "resolve workspace/skill tools cross-process in durable tools"
+        area: core
+        url: https://github.com/mastra-ai/mastra/pull/19331
+      - n: 19329
+        title: "honor toolCallConcurrency — run parallel tool calls concurrently"
+        area: inngest
+        url: https://github.com/mastra-ai/mastra/pull/19329
+      - n: 19315
+        title: "generate thread title for durable agents (createEventedAgent / Inngest)"
+        area: core
+        url: https://github.com/mastra-ai/mastra/pull/19315
+      - n: 19313
+        title: "nest durable output-step processor spans under AGENT_RUN via tracingContext"
+        area: core
+        url: https://github.com/mastra-ai/mastra/pull/19313
+      - n: 19003
+        title: "pass --implicit-dirs to gcsfuse so externally-written objects are visible"
+        area: daytona
+        url: https://github.com/mastra-ai/mastra/pull/19003
+
+# Published libraries
+libraries:
+  - name: django-durationwidget
+    url: https://github.com/devangpadhiyar/django-durationwidget
+    stars: 19
+    downloads: 815K+   # pepy.tech total
+    description: Duration input widget for Django forms.
+  - name: django-validators
+    url: https://github.com/devangpadhiyar/django-validators
+    stars: 5
+    downloads: 87K+    # pepy.tech total
+    description: Reusable validators for Django models and forms.

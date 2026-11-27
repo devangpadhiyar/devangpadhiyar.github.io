@@ -10,3 +10,7 @@ Gemfile.lock
 
 # Log Files
 *.log
+# private resume build (phone number, drafts, build notes) — never publish
+_resume/
+
+.DS_Store

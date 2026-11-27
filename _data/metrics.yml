@@ -1,0 +1,144 @@
+# RULE (plan §0f-6): every figure MUST carry a `source`.
+# A figure with no source does not render. Never invent numbers.
+#   verified  = independently checkable by a third party (API / repo / live site)
+#   self      = his own claim about his own work (real, but not third-party checkable)
+
+proof_bar:
+  - figure: "2 roles"
+    label: "Senior SWE, Simplified (LLM agents, led AI video) · Founding Engineer, Scenes AI"
+    href: "/about/"
+    source: verified
+    kind: text
+
+  - figure: "3,715"
+    label: "Stack Overflow reputation · django · python"
+    href: "https://stackoverflow.com/users/7852189/devang-padhiyar"
+    source: verified
+    kind: number
+
+  - figure: "Open source"
+    label: "23 bugs reported, 6 PRs merged in Mastra · 900K+ PyPI downloads"
+    href: "https://github.com/devangpadhiyar"
+    source: verified
+    kind: text
+
+  - figure: "9 yrs"
+    label: "across ERP · crypto · e-commerce · AI"
+    href: "/about/"
+    source: verified
+    kind: text
+
+# Per-project metrics. Only entries with a real `source` render.
+# Deliberately sparse: the plan forbids placeholder figures.
+projects:
+  scenes:
+    - {figure: "1,400+", label: "sign-ups in the first 8 months", source: self}
+    - {figure: "159", label: "paying customers (11% conversion, 35% repeat)", source: self}
+    - {figure: "450+", label: "productions; 2,300+ clips and images", source: self}
+    - {figure: "35", label: "eval cases; 165-run planner study", source: self}
+    - {figure: "0% → 83%", label: "narration coverage after the schema fix", source: self}
+  simplified-agents:
+    - {figure: "295 → 69 ms", label: "p95 inter-event streaming latency", source: self}
+    - {figure: "20+", label: "agent skills in VideoPilot", source: self}
+  simplified-video:
+    - {figure: "577K+", label: "videos created; team of up to 5", source: self}
+    - {figure: "40", label: "live video and image models via 3 providers", source: self}
+  simplified-infra:
+    - {figure: "65%", label: "less main-app GKE compute", source: self}
+    - {figure: "200K+", label: "Celery jobs a day, 99.97% success", source: self}
+  opensource:
+    - {figure: "23", label: "durable-execution bugs reported in Mastra, all fixed upstream", source: verified}
+    - {figure: "900K+", label: "PyPI downloads (pepy.tech)", source: verified}
+  simplified:
+    - figure: "30–40%"
+      label: "fewer DB round trips"
+      context: "custom cache plugin, built at Aubergine while embedded at Simplified"
+      source: self
+
+# Homepage film: one idea per full-screen scene, in scroll order. Figures come straight from the résumé (v18).
+# kind: statement (headline + one sentence) or metric (one big number). no/take/slate are chalked onto the
+# 3D clapperboard; `pose` places it (side / back / hide / wrap). A metric with no `source` does not render.
+scenes:
+  - key: agents
+    kind: statement
+    no: "01"
+    take: 1
+    slate: AGENTS
+    pose: side
+    kicker: "Scene 01 · LLM agents"
+    title: "Agents in production"
+    body: "I built VideoPilot, Simplified's video-creation agent, on LangGraph and LangChain Deep Agents: 20+ agent skills, sandboxed runs, an offline eval harness."
+  - key: latency
+    kind: metric
+    no: "01"
+    take: 2
+    slate: LATENCY
+    pose: metric
+    kicker: "Scene 01 · Take 2 · Agent latency"
+    figure: "295 → 69 ms"
+    label: "p95 inter-event streaming latency of production agents."
+    source: self
+    facts:
+      - {figure: "698 → 74 ms", label: "time to first event", source: self}
+      - {figure: "−77%", label: "p95 latency, same agents", source: self}
+      - {figure: "20+", label: "agent skills in VideoPilot", source: self}
+  - key: video
+    kind: statement
+    no: "02"
+    take: 1
+    slate: VIDEO
+    pose: side
+    kicker: "Scene 02 · Generative video"
+    title: "Video at scale"
+    body: "Led Simplified's AI video team of up to five engineers: text-to-video, AI voices, captions, repurposing and rendering, behind one API over 40 live video and image models."
+  - key: videos
+    kind: metric
+    no: "02"
+    take: 2
+    slate: 577K VIDEOS
+    pose: metric
+    kicker: "Scene 02 · Take 2 · Output"
+    figure: "577K+"
+    label: "videos created on the product my team built."
+    source: self
+    facts:
+      - {figure: "21.6K", label: "videos in the peak month", source: self}
+      - {figure: "Up to 5", label: "engineers on the AI video team", source: self}
+      - {figure: "1.1M+", label: "transcriptions across 4 speech-to-text providers", source: self}
+  - key: infra
+    kind: metric
+    no: "03"
+    take: 1
+    slate: INFRA
+    pose: metric
+    kicker: "Scene 03 · Infrastructure"
+    figure: "65%"
+    label: "less GKE compute for the main app, right-sized with the infrastructure team."
+    source: self
+    facts:
+      - {figure: "200K+", label: "Celery jobs a day", source: self}
+      - {figure: "99.97%", label: "job success rate", source: self}
+      - {figure: "KEDA", label: "queue-driven scale-to-zero workers", source: self}
+  - key: scenes
+    kind: statement
+    no: "04"
+    take: 1
+    slate: SCENES AI
+    pose: side
+    kicker: "Scene 04 · Zero to one"
+    title: "159 paying customers"
+    body: "Founding engineer of Scenes AI, an agent-driven video studio backed by Simplified. Its only engineer: 1,400+ sign-ups and 159 paying customers in the first 8 months."
+  - key: oss
+    kind: metric
+    no: "05"
+    take: 1
+    slate: OPEN SOURCE
+    pose: metric
+    kicker: "Scene 05 · Open source"
+    figure: "23 bugs"
+    label: "found and reported in Mastra's durable execution, all fixed upstream."
+    source: verified
+    facts:
+      - {figure: "6", label: "merged pull requests in Mastra", source: verified}
+      - {figure: "900K+", label: "PyPI downloads of my Django packages", source: verified}
+      - {figure: "118", label: "Stack Overflow answers, 3,700+ reputation", source: verified}

@@ -1,11 +1,11 @@
-<footer class="mt-auto py-3 text-center">
-
-  <small class="text-muted mb-2">
-    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
-    by <strong>{{ site.author.name }}</strong>
-  </small>
-
-  {% include social.html %}
-
-
+<footer class="foot">
+  <div class="foot__in">
+    <p class="foot__meta">
+      © {{ site.time | date: '%Y' }} {{ site.author.name }}
+      <span class="foot__sep">·</span>
+      {{ site.author.location }} <span class="foot__sep">·</span> {{ site.author.availability }}
+    </p>
+    {% include social.html %}
+  </div>
+  <p class="foot__note">Built by hand — no frameworks, no trackers.</p>
 </footer>

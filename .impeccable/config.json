@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "assets/css/style.scss"
+        ],
+        "createdAt": "2026-11-26T14:23:38.637Z",
+        "reason": "2px prose callout/blockquote rules, not card side-tabs"
+      }
+    ]
+  }
+}

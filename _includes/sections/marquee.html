@@ -1,0 +1,10 @@
+{%- comment -%} Stack marquee. The second copy is decorative only (aria-hidden) so it loops seamlessly. {%- endcomment -%}
+{%- assign stack = "LangGraph,Deep Agents,Mastra,MCP,Python,Django,TypeScript,React,FFmpeg,Celery,RabbitMQ,GKE,Kubernetes,Terraform,Langfuse,Pinecone" | split: "," -%}
+<div class="marquee" aria-label="Stack">
+  <ul class="marquee__track">
+    {%- for s in stack -%}<li>{{ s }}</li>{%- endfor -%}
+  </ul>
+  <ul class="marquee__track" aria-hidden="true">
+    {%- for s in stack -%}<li>{{ s }}</li>{%- endfor -%}
+  </ul>
+</div>

@@ -1,12 +1,12 @@
 ---
-layout: default
-title: Projects
+layout: page
 permalink: /projects/
-weight: 1
-description: "Projects by Devang Padhiyar: LLM-powered video agents, multi-agent orchestration with LangGraph & CopilotKit, and agentic coding automation."
-remote_projects:
-  - git-for-wizards
-  - arduino-visitor-counter
+title: Projects
+wide: true
+description: "Products, open-source infrastructure and client work — agent orchestration, LLM video pipelines, crypto and e-commerce."
 ---
 
-{% include projects/index.html %}
+<div class="pgrid pgrid--all">
+  {%- assign projects = site.projects | sort: 'order' -%}
+  {%- for p in projects -%}{% include project-card.html project=p %}{%- endfor -%}
+</div>
